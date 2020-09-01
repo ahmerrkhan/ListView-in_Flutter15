@@ -17,7 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text("ListView in Flutter"),
         ),
 
-        // body: ListView(             //1.This is ListView
+        // body: ListView(                                  //1.This is ListView
         //   //reverse: true,     //reverses the text in down way
         //   children: [
         //     Text("Text 1"),            // you can easily give it to centre, padding or any widget
@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
         //   ],
         // ),
 
-        // body: ListView.builder(                 //2.This is ListView.builder for multiple childrens
+        // body: ListView.builder(                        //2.This is ListView.builder for multiple childrens
         //   itemCount: _itemcount,
         //   itemBuilder: (context, index) {
         //     return Padding(
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         //   },
         // ),
 
-        // body: ListView.separated(            //3.This is ListView.separater for multiple childrens separation
+        // body: ListView.separated(                      //3.This is ListView.separater for multiple childrens separation
 
         //   itemCount: _itemcount,
         //   itemBuilder: (context, index) {
@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
         //   separatorBuilder: (BuildContext context, _itemcount) => const Divider(),
         // ),
 
-        // body: ListView.builder(            //4.To use _list from State< >
+        // body: ListView.builder(                          //4.To use _list from State< >
         //     itemCount: _list.length,
         //     itemBuilder: (context, index) {
         //       return Padding(
@@ -63,9 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
         //       );
         //     }),
 
-        body: ListView.separated(
-          //listView.separated or listView.builder
-          //5. This is ListTile, leadings
+        body: ListView.separated(                           //listView.separated or listView.builder
+                                                            //5. This is ListTile, leadings
           itemCount: _itemcount,
           itemBuilder: (context, index) {
             return ListTile(
